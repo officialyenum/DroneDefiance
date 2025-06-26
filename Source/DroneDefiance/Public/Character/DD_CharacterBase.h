@@ -66,14 +66,24 @@ private:
 	float MouseAimingTurnRate;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player|Camera", meta=(AllowPrivateAccess = "true"))
 	float MouseAimingLookUpRate;
-
-	
 	float CameraDefaultFOV;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player|Camera", meta=(AllowPrivateAccess = "true"))
 	float CameraZoomedFOV;
 	float CameraCurrentFOV;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player|Camera", meta=(AllowPrivateAccess = "true"))
 	float ZoomedInterpSpeed;
+
+	/** Cross Hairs */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player|CrossHairs", meta=(AllowPrivateAccess = "true"))
+	float CrossHairSpreadMultiplier;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player|CrossHairs", meta=(AllowPrivateAccess = "true"))
+	float CrossHairVelocityFactor;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player|CrossHairs", meta=(AllowPrivateAccess = "true"))
+	float CrossHairInAirFactor;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player|CrossHairs", meta=(AllowPrivateAccess = "true"))
+	float CrossHairAimFactor;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player|CrossHairs", meta=(AllowPrivateAccess = "true"))
+	float CrossHairShootingFactor;
 
 	/** Weapons and Combat */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player|Combat|Weapon", meta=(AllowPrivateAccess = "true"))
